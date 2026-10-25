@@ -3,7 +3,7 @@ import { getMobileNavigation } from './appNavigation';
 
 describe('getMobileNavigation', () => {
   it('gives athletes direct access to progress and tournaments', () => {
-    expect(getMobileNavigation('athlete').map((item) => item.id)).toEqual(['progress', 'tournaments']);
+    expect(getMobileNavigation('athlete').map((item) => item.id)).toEqual(['progress', 'courts', 'tournaments']);
   });
 
   it('gives coaches direct access to their daily management views', () => {
